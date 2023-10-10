@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f7cd2b308a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,55 +32,151 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus nec ex hendrerit euismod. Vestibulum vel
       velit et libero hendrerit facilisis. Nulla facilisi.</p>
   </section>
+  <div class="container carrusel_">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/diseño_y_programacion.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/ofimatica.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/deseño_publicitario.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/electronica_y_reparacion.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/auxiliar_contable.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 
-  <section id="courses">
+  <div class="p-4">
     <h2>Descubre nuestros cursos</h2>
-    <div class="section">
-
-      <div class="course">
-        <img src="./img/4_secretariado ejecutivo.jpg" alt="Curso 1">
-        <h3>Curso 1</h3>
-        <p>Descripción del Curso 1.</p>
+    <div class="row g-3">
+      <div class="col-sm-12 col-md-4 ">
+        <div class="card shadow">
+          <img src="./img/4_secretariado ejecutivo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Curso 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
-      <div class="course">
-        <img src="./img/5_SISTEMAS INFORMATICOS.jpg" alt="Curso 2">
-        <h3>Curso 2</h3>
-        <p>Descripción del Curso 2.</p>
+      <div class="col-sm-12 col-md-4 ">
+        <div class="card shadow">
+          <img src="./img/5_SISTEMAS INFORMATICOS.jpg" alt="Curso 2">
+          <div class="card-body">
+            <h5 class="card-title">Curso 2</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <a href="#">Iniciar</a>
+          </div>
+        </div>
       </div>
-      <div class="course">
-        <img src="./img/06-05-2021_DISEÑO PUBLICITARIO.jpg" alt="Curso 3">
-        <h3>Curso 3</h3>
-        <p>Descripción del Curso 3.</p>
+      <div class="col-sm-12 col-md-4 ">
+        <div class="card shadow">
+          <img src="./img/06-05-2021_DISEÑO PUBLICITARIO.jpg" alt="Curso 3">
+          <div class="card-body">
+            <h5 class="card-title">
+              Curso 3
+            </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid!</p>
+            <a href="#">des</a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-
-  <section id="form">
-    <div class="formtext">
-      <h2>Regístrate para obtener más información</h2>
-    </div>
-    <div class="form">
-      <form id="registration-form" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="correo">Numero:</label>
-        <input type="text" id="correo" name="numero" required>
-
-        <label for="curso">Curso de interés:</label>
-        <select id="curso" name="curso" required>
-          <option value="Curso 1">Curso 1</option>
-          <option value="Curso 2">Curso 2</option>
-          <option value="Curso 3">Curso 3</option>
-        </select>
-
-        <button type="submit">Enviar</button>
+  </div>
+  <div class="container-sm w-md-40 w-lg-40 w-xl-40 mx-auto m-4">
+    <h2 class="text-center">Regístrate para obtener más información</h2>
+    <div class="card-body">
+      <form class="row g-3" id="registration-form" method="post">
+        <div class="mb-1">
+          <label for="nombre">Nombre</label>
+          <input class="form-control form-control-sm" type="text" name="nombre" required>
+        </div>
+        <div class="mb-1">
+          <label for="ciudad">Ciudad</label>
+          <input class="form-control form-control-sm" type="text" name="ciudad" id="ciudad" required>
+        </div>
+        <div class="mb-1">
+          <label for="telefono">Telefono</label>
+          <input type="text" name="telefono" id="telefono" required class="form-control form-control-sm">
+        </div>
+        <div class="mb-1">
+          <label for="correo">Correo</label>
+          <input type="email" name="correo" id="correo" required class="form-control form-control-sm">
+        </div>
+        <div class="mb-1">
+          <label for="correo">Curso</label>
+          <select class="form-control form-control-sm" id="correo" name="correo" required>
+            <option value="Diseño grafico publicitario">Diseño Grafico Publicitario</option>
+            <option value="Auxiliar Contable">Auxiliar Contable</option>
+            <option value="Electronica y Reparacion">Electronica y Reparacion</option>
+            <option value="Ofimatica">Ofimatica</option>
+            <option value="Diseño y Programacion de Videojuegos">Diseño y Programacion de Videojuegos</option>
+          </select>
+        </div>
+        <div class="float-right">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
       </form>
     </div>
-  </section>
+  </div>
 
   <footer>
     <p>&copy; 2023 Nuestra Institución Educativa. Todos los derechos reservados.</p>
+    <br>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -2,10 +2,6 @@
 var form = document.getElementById("registration-form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  const nombre = document.getElementById("nombre").value;
-  const correo = document.getElementById("correo").value;
-  const curso = document.getElementById("curso").value;
-
   // Aquí puedes agregar código para procesar los datos del formulario, como enviarlos a un servidor o mostrar un mensaje de confirmación.
 
   const formData = new FormData(this);
@@ -13,7 +9,7 @@ form.addEventListener("submit", function (event) {
     console.log(clave + ": " + valor);
   });
   const url =
-    "https://script.google.com/macros/s/AKfycbwkRBlV6yfZQo7pOwe6KiYo22qmA17ICjbJj48tv3okzW9jtzHptndqk3jW6mGBV0Q/exec";
+    "https://script.google.com/macros/s/AKfycbwzbV5EH25GK4FISI6LqvFr4a1A0f-DSEgAos6-R4fi-pInPzlxlm9n5jwfPuGHhVHMLw/exec";
   fetch(url, { method: "POST", body: formData })
     .then((response) => console.log(response.json()))
     .catch((error) => console.log(" Error: " + error.message));

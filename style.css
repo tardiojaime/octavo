@@ -1,9 +1,6 @@
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
 }
 
 header {
@@ -14,7 +11,6 @@ header {
   background-attachment: fixed;
   color: #fff;
   text-align: center;
-  padding: 2rem;
   position: relative;
 }
 .texto {
@@ -47,10 +43,6 @@ nav a {
   font-weight: bold;
 }
 
-section {
-  padding: 2rem;
-}
-
 .section {
   display: flex;
 }
@@ -63,7 +55,6 @@ section {
   max-width: 93%;
   margin-left: 1.1%;
 }
-
 #form {
   background: linear-gradient(45deg, #333333, #169572);
   color: #fff;
@@ -71,63 +62,19 @@ section {
   padding: 2rem;
 }
 
-form {
-  display: inline-block;
-  text-align: left;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-input,
-select {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1rem;
-}
-#form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.formtext {
-  width: 50%;
-  height: 100%;
-}
-.form {
-  width: 50%;
-}
-form {
-  width: 80%;
 }
 
 #anniversary-heading {
   overflow: hidden;
   color: black;
-  font-size: 45px;
+  font-size: 25px;
   white-space: nowrap;
   border-right: 3px solid transparent;
-  animation: typing 2s steps(22, end), blink-caret 0.5s step-end infinite;
+  animation: typing 2s steps(15, end), blink-caret 0.5s step-end infinite;
 }
 
 @keyframes typing {
@@ -147,4 +94,13 @@ form {
   50% {
     border-color: #fff;
   }
+}
+.card {
+  transition: 0.4s;
+}
+.card:hover {
+  scale: 102%;
+}
+.carrusel_ {
+  height: 480px;
 }
