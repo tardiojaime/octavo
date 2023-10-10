@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25º Aniversario de nuestra Institución Educativa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#courses">Cursos</a></li>
+        <li><a href="#form">Inscripciones</a></li>
+      </ul>
+    </nav>
+    <div class="texto">
+      <div>
+        <h1 id="anniversary-heading">¡Celebra con nosotros!</h1>
+        <p>25º Aniversario de nuestra Institución Educativa</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="anniversary-text">
+    <h2>Aniversario de 25 años</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus nec ex hendrerit euismod. Vestibulum vel
+      velit et libero hendrerit facilisis. Nulla facilisi.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Descubre nuestros cursos</h2>
+    <div class="section">
+
+      <div class="course">
+        <img src="./img/4_secretariado ejecutivo.jpg" alt="Curso 1">
+        <h3>Curso 1</h3>
+        <p>Descripción del Curso 1.</p>
+      </div>
+      <div class="course">
+        <img src="./img/5_SISTEMAS INFORMATICOS.jpg" alt="Curso 2">
+        <h3>Curso 2</h3>
+        <p>Descripción del Curso 2.</p>
+      </div>
+      <div class="course">
+        <img src="./img/06-05-2021_DISEÑO PUBLICITARIO.jpg" alt="Curso 3">
+        <h3>Curso 3</h3>
+        <p>Descripción del Curso 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="formtext">
+      <h2>Regístrate para obtener más información</h2>
+    </div>
+    <div class="form">
+      <form id="registration-form" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Numero:</label>
+        <input type="text" id="correo" name="numero" required>
+
+        <label for="curso">Curso de interés:</label>
+        <select id="curso" name="curso" required>
+          <option value="Curso 1">Curso 1</option>
+          <option value="Curso 2">Curso 2</option>
+          <option value="Curso 3">Curso 3</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Nuestra Institución Educativa. Todos los derechos reservados.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
