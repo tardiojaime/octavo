@@ -5,184 +5,207 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>25º Aniversario de nuestra Institución Educativa</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/f7cd2b308a.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#courses">Cursos</a></li>
-        <li><a href="#form">Inscripciones</a></li>
-      </ul>
+    <nav class="navbar navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="img/IMAGOTIPO ITEC_COLOR(1).png" alt="" width="80" height="40"
+            class="d-inline-block align-text-top">
+        </a>
+        <div class="container-a">
+          <a href="#cursos">Cursos</a>
+          <a href="#registrarme">Registrate</a>
+        </div>
+      </div>
     </nav>
-    <div class="texto">
-      <div>
-        <h1 id="anniversary-heading">¡Celebra con nosotros!</h1>
-        <p>25º Aniversario de nuestra Institución Educativa</p>
+    <div class="container home">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>¡Celebra con nosotros!</h1>
+          <h3>8 años en constante cresimiento</h3>
+          <p>Admision especiales, inscribete ahora!</p>
+          <a class="cursos_home" href="#cursos">cursos</a>
+        </div>
+        <div class="col-md-6 home_img text-end">
+          <img src="img/IMAGOTIPO ITEC_BLANCO(1).png" alt="" width="50%" height="50%">
+        </div>
       </div>
     </div>
   </header>
-
-  <section id="anniversary-text">
-    <h2>Aniversario de 25 años</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus nec ex hendrerit euismod. Vestibulum vel
-      velit et libero hendrerit facilisis. Nulla facilisi.</p>
-  </section>
-  <div class="container carrusel_">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-          aria-label="Slide 5"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/diseño_y_programacion.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/ofimatica.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/deseño_publicitario.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/electronica_y_reparacion.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/auxiliar_contable.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+  <div class="ola">
+    <div style="height: 80px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: rgb(255, 255, 255);"></path>
+      </svg></div>
   </div>
-
-  <div class="p-4">
-    <h2>Descubre nuestros cursos</h2>
-    <div class="row g-3">
-      <div class="col-sm-12 col-md-4 ">
-        <div class="card shadow">
-          <img src="./img/4_secretariado ejecutivo.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Curso 1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+  <div id="cursos" class="container">
+    <h2 class="text-center h2">Cursos (nivel capacitacion)</h2>
+    <p class="text-center fw-bold fs-5">¡celebremos juntos, 8 años de constante crecimiento!</p>
+    <p class="text-center fs-5">Oferta especial por aniversario: Matricula 0, mesualidad 25% de descuento.</p>
+    <swiper-container class=" mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+      <swiper-slide>
+        <img src="./img/auxiliar_contable.jpg" />
+        <div class="cont-img">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/auxiliar_contable_conte.jpg" curso="0" onclick="modals(this)">ver mas</a>
+          </li>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-4 ">
-        <div class="card shadow">
-          <img src="./img/5_SISTEMAS INFORMATICOS.jpg" alt="Curso 2">
-          <div class="card-body">
-            <h5 class="card-title">Curso 2</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <a href="#">Iniciar</a>
-          </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img/diseño_y_programacion.jpg" />
+        <div class="cont-img">
+          <li>
+            <div class="spinner-grow text-success" role="status">
+              <span class="visually-hidden"></span>
+            </div>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/deseño_de_videojuegos_contenido.jpg" curso="1" onclick="modals(this)">ver
+              mas</a>
+          </li>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-4 ">
-        <div class="card shadow">
-          <img src="./img/06-05-2021_DISEÑO PUBLICITARIO.jpg" alt="Curso 3">
-          <div class="card-body">
-            <h5 class="card-title">
-              Curso 3
-            </h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid!</p>
-            <a href="#">des</a>
-          </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img/ofimatica.jpg" />
+        <div class="cont-img">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/ofimatica-contenido.jpeg" curso="2" onclick="modals(this)">ver mas</a>
+          </li>
         </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img/electronica_y_reparacion.jpg" />
+        <div class="cont-img">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/electronica_y_reparacion_con.jpg" curso="3" onclick="modals(this)">ver mas</a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img/deseño_publicitario.jpg" />
+        <div class="cont-img">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/diseño_publicitario_contenido.jpg" curso="4" onclick="modals(this)">ver mas</a>
+          </li>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+        <a id="btn-wha" class="btn btn-wha position-absolute top-0" sms="base" onclick="porcurso(this)" role="button"
+          style="right: 0;">Obtener<i class="fab fa-whatsapp" style="color: #24b241;"></i></a>
+        <img id="modal_img" src="img/ofimatica-contenido.jpeg" alt="">
       </div>
     </div>
   </div>
-  <div class="container-sm w-md-40 w-lg-40 w-xl-40 mx-auto m-4">
-    <h2 class="text-center">Regístrate para obtener más información</h2>
-    <div class="card-body">
-      <form class="row g-3" id="registration-form" method="post">
-        <div class="mb-1">
-          <label for="nombre">Nombre</label>
-          <input class="form-control form-control-sm" type="text" name="nombre" required>
+  <div id="registrarme" class="container">
+    <h2 class="text-center h2">Aprobecha nuestros cursos especiales, solicita tu cupo:</h2>
+    <div class="row mb-4">
+      <div class="col-md-6 col-sm-6 formulario">
+        <div class="contenedor_form">
+          <div class="logo_container">
+            <img src="img/logo_2_r.png" alt="">
+          </div>
+          <div class="card-body">
+            <form class="row g-1" id="registration-form" method="post">
+              <div class="">
+                <label for="nombre">Nombre</label>
+                <input class="form-control form-control-sm" type="text" name="nombre" required>
+              </div>
+              <div class="">
+                <label for="ciudad">Ciudad</label>
+                <input class="form-control form-control-sm" type="text" name="ciudad" id="ciudad" required>
+              </div>
+              <div class="">
+                <label for="telefono">Telefono</label>
+                <input type="text" name="telefono" id="telefono" required class="form-control form-control-sm">
+              </div>
+              <div class="">
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" id="correo" required class="form-control form-control-sm">
+              </div>
+              <div class="mb-3">
+                <label for="correo">Curso</label>
+                <select class="form-control form-control-sm" id="correo" name="correo" required>
+                  <option value="Diseño grafico publicitario">Diseño Grafico Publicitario</option>
+                  <option value="Auxiliar Contable">Auxiliar Contable</option>
+                  <option value="Electronica y Reparacion">Electronica y Reparacion</option>
+                  <option value="Ofimatica">Ofimatica</option>
+                  <option value="Diseño y Programacion de Videojuegos">Diseño y Programacion de Videojuegos</option>
+                </select>
+              </div>
+              <div class="text-center">
+                <button id="btn_submit" type="submit" class="sign-in_btn">Enviar
+                  <div id="espera" class="d-none spinner-grow text-success" role="status">
+                    <span class="visually-hidden"></span>
+                  </div>
+                  <i id="listo" class="fas fa-check-double"></i>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="mb-1">
-          <label for="ciudad">Ciudad</label>
-          <input class="form-control form-control-sm" type="text" name="ciudad" id="ciudad" required>
-        </div>
-        <div class="mb-1">
-          <label for="telefono">Telefono</label>
-          <input type="text" name="telefono" id="telefono" required class="form-control form-control-sm">
-        </div>
-        <div class="mb-1">
-          <label for="correo">Correo</label>
-          <input type="email" name="correo" id="correo" required class="form-control form-control-sm">
-        </div>
-        <div class="mb-1">
-          <label for="correo">Curso</label>
-          <select class="form-control form-control-sm" id="correo" name="correo" required>
-            <option value="Diseño grafico publicitario">Diseño Grafico Publicitario</option>
-            <option value="Auxiliar Contable">Auxiliar Contable</option>
-            <option value="Electronica y Reparacion">Electronica y Reparacion</option>
-            <option value="Ofimatica">Ofimatica</option>
-            <option value="Diseño y Programacion de Videojuegos">Diseño y Programacion de Videojuegos</option>
-          </select>
-        </div>
-        <div class="float-right">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
-
+  <div class="ola2">
+    <div style="height: 110px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M-7.05,10.38 C165.06,95.23 289.78,-56.72 514.39,36.03 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: rgb(255, 255, 255);"></path>
+      </svg></div>
+  </div>
   <footer>
-    <p>&copy; 2023 Nuestra Institución Educativa. Todos los derechos reservados.</p>
-    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <h3 class="text-center">Contactanos</h3>
+          <ul class="ul-footer">
+            <li>
+              <a href="#"><i class="fas fa-map-marker-alt " style="color: #21b63f;"></i> Aniceto Arce #289, Ciudad
+                Sucre,
+                Bolivia</a>
+            </li>
+            <li>
+              <a href="https://www.itec.com.bo/"><i class="fas fa-globe" style="color: #2585df;"></i>
+                www.itec.com.bo</a>
+            </li>
+            <li><a id="wa-me" href="#"><i class="fab fa-whatsapp" style="color: #24b241;"></i> 72871823</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <h4 class="text-right">Siguenos en:</h4>
+          <ul class="ul-footer">
+            <li><a href="#"><i class="fab fa-facebook" style="color: #164492;"></i> Itec - Instituto Tecnico</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Itec - Instituto Tecnico</a></li>
+            <li><a href=""><i class="fab fa-tiktok" style="color: #000000;"></i> Itec - Instituto Tecnico</a></li>
+            </li>
+          </ul>
+        </div>
+        <p class="text-center text-muted">© 2023 Itec - Instituto Tecnico</p>
+      </div>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
-
 </body>
 
 </html>
