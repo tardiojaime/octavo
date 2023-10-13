@@ -1,9 +1,0 @@
-seccion de cursos -> Cursos (nivel capacitacion)
-descripcion ->celebromos juntos, 8 años de constante crecimiento
-	Oferta especial por aniversario: Matricula 0, mesualidad 25% de descuento.
-En los contenidos, recerba aqui-> nombre del boton
-
-Aprobecha nuestros cursos especiales, solicita tu cupo aquí: 
- colocar el formulario al centro
-
-footer

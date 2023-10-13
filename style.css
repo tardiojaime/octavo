@@ -21,6 +21,7 @@ header {
 }
 .ola {
   height: 80px;
+  margin-top: -5px;
   background: #007991; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -36,6 +37,7 @@ header {
 .ola2 {
   background-color: #333;
   height: 50px;
+  margin-bottom: -5px;
 }
 .home {
   width: 100%;
@@ -72,7 +74,25 @@ header {
   text-align: center;
 }
 .home_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/IMAGOTIPO_ITEC_COLOR.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   animation: derecha 0.5s ease-in;
+}
+.home_img img {
+  animation: scale 1s infinite;
+}
+@keyframes scale {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 115%;
+  }
 }
 .home .row div h1 {
   animation: izquierda 0.5s ease-in;
@@ -225,10 +245,10 @@ swiper-slide {
   background-position: center;
   background-size: cover;
   width: 400px;
-  height: 455px;
+  height: 450px;
 }
-.swiper-pagination {
-  transform: translate3d(0px, -40px, 0px) !important;
+i.fas.fa-search-plus.fa-rotate-90.fa-xs {
+  font-size: 15px;
 }
 swiper-slide img {
   display: block;
@@ -244,8 +264,10 @@ swiper-slide img {
   background: linear-gradient(270deg, rgb(255, 255, 255), transparent);
 }
 .cont-img {
+  position: absolute;
+  top: 3px;
+  left: 3px;
   width: 100%;
-  text-align: center;
   height: 35px;
 }
 
@@ -254,23 +276,29 @@ swiper-slide img {
   list-style: none;
 }
 .cont-img li a {
+  margin-top: 2px;
   text-decoration: none;
-  padding: 2px;
-}
-.cont-img li a::before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  color: blue;
-  animation: bordes 1s infinite;
+  padding: 1px 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
 }
 .cont-img li a i {
   font-size: 25px;
   transition: 0.1s;
 }
 .cont-img li a:hover {
-  border-bottom: 1px solid blue;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
+  color: rgb(255, 255, 255);
+  background-color: blue;
+}
+.cont-img li a:hover i {
+  color: white;
+}
+a:not([href]):not([class]) {
+  color: blue;
+}
+
+a:not([href]):not([class]):hover {
+  color: white;
 }
 .container p {
   margin-bottom: 0;
@@ -307,6 +335,29 @@ swiper-slide img {
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
   padding: 10px 0;
+  background: #121fcf;
+  background: -webkit-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.h22 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  padding: 10px 0;
+  height: 120px;
+  background: #121fcf;
+  background: -webkit-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cupo {
+  margin-top: -15px;
+  font-size: 2.5rem;
+  margin-top: -60px;
   background: #121fcf;
   background: -webkit-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
   background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
@@ -430,26 +481,70 @@ footer div div h3 {
   -webkit-text-fill-color: transparent;
 }
 .btn-wha {
-  background: white;
+  background: rgb(4, 4, 70);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
+  color: white;
 }
 .btn-wha:hover {
-  background: rgb(4, 4, 70);
-  color: white;
+  color: green;
+  background: white;
 }
 @media screen and (max-width: 768px) {
   swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 200px;
-    height: 250px;
+    width: 280px;
+    height: 400px;
     right: inherit;
+  }
+  swiper-slide img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .h22 {
+    font-size: 1.7rem;
+    height: inherit;
+  }
+  .h2 {
+    font-size: 2rem;
+  }
+  .cupo {
+    margin-top: -7px;
+    font-size: 1.2rem;
+    margin-top: -50px;
   }
   .cont-img {
     height: 25px;
   }
   .cont-img li a i {
     font-size: 16px;
+  }
+  .span_r {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .span_r {
+    display: none;
+  }
+  .cupo {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .span_r {
+    display: none;
+  }
+  .cupo {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    height: 70vh;
+  }
+  .home_img {
+    background: none;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
