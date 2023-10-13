@@ -18,12 +18,25 @@ body {
 
 header {
   height: 100vh;
-  background: url("./img2/Elemento_Landing_Fondo1.jpg");
+  /* background: url("./img2/Elemento_Landing_Fondo1.jpg"); */
+  background: rgb(0, 80, 175);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 80, 175, 1) 0%,
+    rgba(50, 118, 200, 1) 49%,
+    rgba(0, 80, 175, 1) 100%
+  );
 }
 .ola {
   height: 80px;
-  margin-top: -30px;
-  background: white;
+  margin-top: -2px;
+  background: rgb(0, 80, 175);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 80, 175, 1) 0%,
+    rgba(50, 118, 200, 1) 49%,
+    rgba(0, 80, 175, 1) 100%
+  );
 }
 .ola2 {
   background-color: #333;
@@ -38,7 +51,6 @@ header {
   align-items: center;
 }
 #cursos {
-  height: 100vh;
 }
 .texto1 {
   font-family: "hregular";
@@ -55,7 +67,7 @@ header {
   font-weight: bold;
 }
 .cursos_home:hover {
-  color: var(--color1);
+  color: black;
   background: var(--amarillo);
   box-shadow: 0 0 10px rgba(26, 47, 139, 0.51);
 }
@@ -73,15 +85,17 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
 .home_img {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  /*   background-image: url("./img/IMAGOTIPO_ITEC_COLOR.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; */
   animation: derecha 0.5s ease-in;
 }
+.cursos_home_mobile {
+  display: none;
+}
 .home_img img {
-  animation: scale 1s infinite;
+  /* animation: scale 1s infinite; */
+  width: 40%;
+  height: 80%;
 }
 @keyframes scale {
   0% {
@@ -239,8 +253,8 @@ swiper-container {
 swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 450px;
+  width: 350px;
+  height: 500px;
 }
 i.fas.fa-search-plus.fa-rotate-90.fa-xs {
   font-size: 15px;
@@ -248,6 +262,7 @@ i.fas.fa-search-plus.fa-rotate-90.fa-xs {
 swiper-slide img {
   display: block;
   width: 100%;
+  object-fit: cover;
 }
 .swiper-slide-shadow-right.swiper-slide-shadow-coverflow {
   /* width: 90%; */
@@ -484,6 +499,11 @@ footer div div h3 {
   color: green;
   background: white;
 }
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
 @media screen and (max-width: 768px) {
   swiper-slide {
     background-position: center;
@@ -494,7 +514,7 @@ footer div div h3 {
   }
   swiper-slide img {
     height: 400px;
-    object-fit: fill;
+    object-fit: cover;
   }
   .h22 {
     font-size: 1.7rem;
@@ -525,6 +545,11 @@ footer div div h3 {
   .cupo {
     margin-top: 12px;
   }
+  .home_img img {
+    /* animation: scale 1s infinite; */
+    width: 40%;
+    height: 60%;
+  }
 }
 @media screen and (max-width: 1250px) {
   .span_r {
@@ -543,12 +568,44 @@ footer div div h3 {
   }
   .home {
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .home .row {
     height: 100%;
     width: 100%;
+  }
+  .home .row .contenedor_Texto {
     display: flex;
+    justify-content: center;
     align-items: end;
+  }
+  .cursos_home {
+    display: none;
+  }
+  .cursos_home_mobile {
+    display: block;
+    margin-top: 15px;
+    padding: 5px 25px;
+    display: inline-block;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1.5px solid var(--amarillo);
+    text-decoration: none;
+    color: var(--amarillo);
+    font-weight: bold;
+  }
+  .cursos_home_mobile:hover {
+    color: black;
+    background: var(--amarillo);
+    box-shadow: 0 0 10px rgba(26, 47, 139, 0.51);
+  }
+  .home_img img {
+    /* animation: scale 1s infinite; */
+    margin-top: -40px;
+    width: 45%;
+    height: 50%;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
