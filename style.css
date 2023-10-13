@@ -1,38 +1,29 @@
-/* styles.css */
+:root {
+  --color1: #fbfcff;
+  --color2: #003454;
+  --amarillo: #e0ba28;
+}
+@font-face {
+  font-family: "hregular";
+  src: url("./fonts/HurmeGeometricSans4-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "hsimibold";
+  src: url("./fonts/HurmeGeometricSans4-SemiBold.ttf") format("truetype");
+}
 body {
   font-family: Arial, sans-serif;
-  font-family: "Roboto Slab", serif;
+  font-family: "hsimibold", "Roboto Slab", serif;
 }
 
 header {
-  height: 80vh;
-  /* background-image: url(img/portada_Mesa\ de\ trabajo\ 1.jpg); */
-  background: #007991; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #78ffd6,
-    #007991
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #78ffd6,
-    #007991
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  background: url("./img2/Elemento_Landing_Fondo1.jpg");
 }
 .ola {
   height: 80px;
-  margin-top: -5px;
-  background: #007991; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #78ffd6,
-    #007991
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #78ffd6,
-    #007991
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: -30px;
+  background: white;
 }
 .ola2 {
   background-color: #333;
@@ -46,29 +37,35 @@ header {
   justify-content: center;
   align-items: center;
 }
+#cursos {
+  height: 100vh;
+}
+.texto1 {
+  font-family: "hregular";
+  color: var(--color1);
+}
 .cursos_home {
   margin-top: 5px;
   padding: 5px 25px;
   display: inline-block;
   border-radius: 5px;
-  border: 2px solid rgb(26, 47, 139);
+  border: 1.5px solid var(--amarillo);
   text-decoration: none;
-  color: rgb(26, 47, 139);
+  color: var(--amarillo);
   font-weight: bold;
 }
 .cursos_home:hover {
+  color: var(--color1);
+  background: var(--amarillo);
   box-shadow: 0 0 10px rgba(26, 47, 139, 0.51);
 }
 .home .row div h1 {
   text-align: center;
   font-size: 40px;
-  background: #121fcf;
-  background: -webkit-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
-  background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
-  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
+  /* background: #CFCFCF;
+background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
 }
 .home .row div {
   text-align: center;
@@ -77,10 +74,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./img/IMAGOTIPO_ITEC_COLOR.png");
+  /*   background-image: url("./img/IMAGOTIPO_ITEC_COLOR.png");
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   animation: derecha 0.5s ease-in;
 }
 .home_img img {
@@ -111,12 +108,12 @@ header {
 }
 .container-a a {
   padding: 0 8px;
-  color: rgb(29, 17, 141);
+  color: white;
   transition: 0.5s;
 }
 .container-a a:hover {
   border-bottom: 1px solid white;
-  color: white;
+  color: rgb(238, 224, 224);
 
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
 }
@@ -128,7 +125,6 @@ header {
   justify-content: center;
 }
 nav {
-  background-color: white;
   animation: arriba 1s ease-in;
 }
 nav ul {
@@ -147,7 +143,6 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: #0e0d0d;
   font-weight: bold;
 }
 
@@ -499,7 +494,7 @@ footer div div h3 {
   }
   swiper-slide img {
     height: 400px;
-    object-fit: cover;
+    object-fit: fill;
   }
   .h22 {
     font-size: 1.7rem;
@@ -541,10 +536,19 @@ footer div div h3 {
 }
 @media screen and (max-width: 576px) {
   header {
-    height: 70vh;
+    height: 100vh;
   }
   .home_img {
     background: none;
+  }
+  .home {
+    display: block;
+  }
+  .home .row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
