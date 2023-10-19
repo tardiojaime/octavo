@@ -7,13 +7,22 @@ var listo = document.getElementById("listo");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   btn_submit.disabled = true;
+  btn_submit.textContent = "...";
+  espera.classList.remove("d-none");
   const formData = new FormData(this);
   const url =
     "https://script.google.com/macros/s/AKfycbwzbV5EH25GK4FISI6LqvFr4a1A0f-DSEgAos6-R4fi-pInPzlxlm9n5jwfPuGHhVHMLw/exec";
   fetch(url, { method: "POST", body: formData })
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("La solicitud no fue exitosa");
+      }
+      return response.json();
+    })
     .then((res) => {
-      guardar();
+      espera.classList.add("d-none");
+      listo.classList.remove("d-none");
+      btn_submit.textContent = "Enviado";
     })
     .catch((error) => console.log(" Error: " + error.message));
 });

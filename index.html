@@ -63,7 +63,7 @@
       slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
       coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
       <swiper-slide>
-        <img src="./img2/ElementosLanding_4.jpg" />
+        <img src="./img2/ElementosLanding_4.webp" />
         <div class="cont-img d-none">
           <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
               content="./img/auxiliar_contable_conte.jpg" curso="0" onclick="modals(this)">ver mas
@@ -73,7 +73,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="./img2/ElementosLanding_1.jpg" />
+        <img src="./img2/ElementosLanding_1.webp" />
         <div class="cont-img d-none">
           <li>
             <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -85,17 +85,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="./img2/ElementosLanding_2.jpg" />
-        <div class="cont-img d-none">
-          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              content="./img/ofimatica-contenido.jpeg" curso="2" onclick="modals(this)">ver mas
-              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
-            </a>
-          </li>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="./img2/ElementosLanding_3.jpg" />
+        <img src="./img2/ElementosLanding_3.webp" />
         <div class="cont-img d-none">
           <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
               content="./img/electronica_y_reparacion_con.jpg" curso="3" onclick="modals(this)">ver mas
@@ -105,7 +95,17 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="./img2/ElementosLanding_5.jpg" />
+        <img src="./img2/ElementosLanding_2.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/ofimatica-contenido.jpeg" curso="2" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_5.webp" />
         <div class="cont-img d-none">
           <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
               content="./img/diseño_publicitario_contenido.jpg" curso="4" onclick="modals(this)">ver mas
@@ -122,7 +122,7 @@
       <div class="modal-content text-center position-relative">
         <a id="btn-wha" class="btn btn-wha position-absolute" sms="base" onclick="porcurso(this)" role="button"
           style="bottom: 5px; right: 5px;">+ info <i class="fab fa-whatsapp" style="color: #24b241;"></i></a>
-        <img id="modal_img" src="img/ofimatica-contenido.jpeg" alt="">
+        <img id="modal_img" src="img2/ElementosLanding_1.webp" alt="">
       </div>
     </div>
   </div>
@@ -144,7 +144,7 @@
             <form class="row g-1" id="registration-form" method="post">
               <div class="">
                 <label for="nombre">Nombre</label>
-                <input class="form-control form-control-sm" type="text" name="nombre" required>
+                <input class="form-control form-control-sm" type="text" name="nombre" id="nombre" required>
               </div>
               <div class="">
                 <label for="ciudad">Ciudad</label>
@@ -159,8 +159,8 @@
                 <input type="email" name="correo" id="correo" required class="form-control form-control-sm">
               </div>
               <div class="mb-3">
-                <label for="correo">Curso</label>
-                <select class="form-control form-control-sm" id="correo" name="correo" required>
+                <label for="curso">Curso</label>
+                <select class="form-control form-control-sm" id="curso" name="curso" required>
                   <option value="Diseño grafico publicitario">Diseño Grafico Publicitario</option>
                   <option value="Auxiliar Contable">Auxiliar Contable</option>
                   <option value="Electronica y Reparacion">Electronica y Reparacion</option>
@@ -170,11 +170,11 @@
               </div>
               <div class="text-center">
                 <button id="btn_submit" type="submit" class="sign-in_btn">Enviar
-                  <div id="espera" class="d-none spinner-grow text-primary" role="status">
-                    <span class="visually-hidden"></span>
-                  </div>
-                  <i id="listo" class="d-none fas fa-check-double"></i>
                 </button>
+                <div id="espera" class="d-none spinner-grow text-primary" role="status">
+                  <span class="visually-hidden"></span>
+                </div>
+                <i id="listo" class="d-none fas fa-check-double" style="color: blue;"></i>
               </div>
             </form>
           </div>

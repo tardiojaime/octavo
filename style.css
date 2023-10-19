@@ -131,9 +131,10 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
 
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
 }
-.texto {
+.text .texto {
   width: 100%;
   height: 100%;
+  padding-left: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,8 +254,8 @@ swiper-container {
 swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 350px;
-  height: 500px;
+  width: 320px;
+  height: 480px;
 }
 i.fas.fa-search-plus.fa-rotate-90.fa-xs {
   font-size: 15px;
@@ -508,12 +509,12 @@ ul {
   swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 280px;
-    height: 400px;
+    width: 275px;
+    height: 405px;
     right: inherit;
   }
   swiper-slide img {
-    height: 400px;
+    height: 380px;
     object-fit: cover;
   }
   .h22 {
