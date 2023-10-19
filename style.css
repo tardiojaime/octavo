@@ -18,6 +18,7 @@ body {
 
 header {
   height: 100vh;
+  position: relative;
   /* background: url("./img2/Elemento_Landing_Fondo1.jpg"); */
   background: rgb(0, 80, 175);
   background: linear-gradient(
@@ -83,6 +84,7 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   text-align: center;
 }
 .home_img {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -92,10 +94,121 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
 .cursos_home_mobile {
   display: none;
 }
-.home_img img {
+.home_img .logo8anos {
   /* animation: scale 1s infinite; */
   width: 40%;
   height: 80%;
+  z-index: 9;
+}
+.home_img div {
+  z-index: 1;
+}
+.blanco {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 32%;
+  bottom: 25%;
+  animation: blanco 7s 2;
+}
+._b {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 30%;
+  bottom: 45px;
+  animation: blanco1 10s 2;
+}
+.azul {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 50%;
+  bottom: 30%;
+  animation: azul 7s 2;
+}
+._a {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 50%;
+  bottom: 32%;
+  animation: azul1 10s 2;
+}
+@keyframes azul {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(50px) translateY(-30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200px) translateY(-100px);
+    width: 100px;
+    height: 120px;
+    opacity: 0;
+  }
+}
+@keyframes azul1 {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  50% {
+    transform: translatex(-100px) translateY(-250px);
+    z-index: 99;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100px);
+    width: 100px;
+    height: 120px;
+    opacity: 0;
+  }
+}
+@keyframes blanco {
+  0% {
+    width: 0px;
+    height: 0px;
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    z-index: 99;
+  }
+  70% {
+    transform: translatex(100px) translateY(-250px);
+  }
+  100% {
+    width: 100px;
+    height: 120px;
+    transform: translatex(85px) translateY(-150px);
+    opacity: 0;
+  }
+}
+@keyframes blanco1 {
+  0% {
+    width: 0px;
+    height: 0px;
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translatex(-50px) translateY(-50px);
+    opacity: 1;
+  }
+  100% {
+    width: 100px;
+    height: 120px;
+    transform: translatex(-100px) translateY(-250px);
+    opacity: 0;
+  }
 }
 @keyframes scale {
   0% {
@@ -546,7 +659,7 @@ ul {
   .cupo {
     margin-top: 12px;
   }
-  .home_img img {
+  .home_img .logo8anos {
     /* animation: scale 1s infinite; */
     width: 40%;
     height: 60%;
@@ -602,7 +715,7 @@ ul {
     background: var(--amarillo);
     box-shadow: 0 0 10px rgba(26, 47, 139, 0.51);
   }
-  .home_img img {
+  .home_img .logo8anos {
     /* animation: scale 1s infinite; */
     margin-top: -40px;
     width: 45%;
