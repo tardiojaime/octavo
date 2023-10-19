@@ -109,7 +109,7 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   height: 0px;
   left: 32%;
   bottom: 25%;
-  animation: blanco 7s 2;
+  animation: blanco 8s infinite;
 }
 ._b {
   position: absolute;
@@ -117,7 +117,7 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   height: 0px;
   left: 30%;
   bottom: 45px;
-  animation: blanco1 10s 2;
+  animation: blanco1 15s infinite;
 }
 .azul {
   position: absolute;
@@ -125,7 +125,7 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   height: 0px;
   left: 50%;
   bottom: 30%;
-  animation: azul 7s 2;
+  animation: azul 15s infinite;
 }
 ._a {
   position: absolute;
@@ -133,7 +133,7 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   height: 0px;
   left: 50%;
   bottom: 32%;
-  animation: azul1 10s 2;
+  animation: azul1 10s infinite;
 }
 @keyframes azul {
   0% {
@@ -141,7 +141,7 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
     height: 0px;
     opacity: 0;
   }
-  30% {
+  50% {
     transform: translateX(50px) translateY(-30px);
     opacity: 1;
   }
