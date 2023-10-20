@@ -4,14 +4,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f7cd2b308a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
   <title>Document</title>
+  <style>
+    .swiper {
+      width: 600px;
+      height: 300px;
+    }
+  </style>
 </head>
 
 <body>
-  <p class="text-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, voluptatibus quidem! Doloribus,
-    maxime delectus possimus perferendis aliquam eos laboriosam quis quaerat fugiat nam dignissimos corrupti, esse
-    debitis cumque. Sint, culpa!</p>
-  <img src="./img2/WhatsApp Image 2023-10-13 at 10.03.24 AM.jpeg" alt="">
+  <!-- Slider main container -->
+  <div id="carreras" class="container">
+    <h2 class="text-center h2">Carreras (nivel técnico superior)</h2>
+    <p class="text-center fw-bold fs-md-5">¡Celebremos juntos 8 años de constante crecimiento!</p>
+    <p class="text-center fs-md-5">Oferta especial por aniversario: Matrícula 0, mensualidad con un 25% de descuento.
+    </p>
+    <swiper-container class=" mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_4.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/auxiliar_contable_conte.jpg" curso="0" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_1.webp" />
+        <div class="cont-img d-none">
+          <li>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/deseño_de_videojuegos_contenido.jpg" curso="1" onclick="modals(this)">ver
+              mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_3.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/electronica_y_reparacion_con.jpg" curso="3" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_2.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/ofimatica-contenido.jpeg" curso="2" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_5.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/diseño_publicitario_contenido.jpg" curso="4" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
 </body>
 
 </html>

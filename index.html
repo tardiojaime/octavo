@@ -32,12 +32,13 @@
     <div class="container home">
       <div class="row">
         <div class="col-md-6 contenedor_Texto">
-          <div>
-            <h1 class="text-white">¡Celebra con nosotros!
-            </h1>
-            <h4 class="texto1">8 años de constante crecimiento</h4>
-            <p class="texto1">Admisiones especiales, ¡inscríbete ahora!</p>
-            <a class="cursos_home" href="#cursos">cursos</a>
+          <div class="imges">
+            <img src="./img2/ElementosLanding_PromoAniversario.png" alt="">
+            <div class="text_subir">
+              <h4 class="texto1">8 años de constante crecimiento</h4>
+              <p class="texto1">Admisiones especiales, ¡inscríbete ahora!</p>
+              <a class="cursos_home" href="#cursos">cursos</a>
+            </div>
           </div>
         </div>
         <div class="col-md-6 home_img">
@@ -58,13 +59,77 @@
           style="stroke: none; fill: rgb(255, 255, 255);"></path>
       </svg></div>
   </div>
+  <div id="carreras" class="container">
+    <h2 class="text-center h2">Cursos (nivel capacitación)</h2>
+    <p class="text-center fw-bold fs-md-5">¡Celebremos juntos 8 años de constante crecimiento!</p>
+    <p class="text-center fs-md-5">Oferta especial por aniversario: Matrícula 0, mensualidad con un 25% de descuento.
+    </p>
+    <swiper-container class=" mySwiper" pagination="true" pagination-dynamic-bullets="true" autoplay-delay="2500"
+      loop="true" effect="coverflow" grab-cursor="true" centered-slides="true" slides-per-view="auto"
+      coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_4.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/auxiliar_contable_conte.jpg" curso="0" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_1.webp" />
+        <div class="cont-img d-none">
+          <li>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/deseño_de_videojuegos_contenido.jpg" curso="1" onclick="modals(this)">ver
+              mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_3.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/electronica_y_reparacion_con.jpg" curso="3" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_2.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/ofimatica-contenido.jpeg" curso="2" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./img2/ElementosLanding_5.webp" />
+        <div class="cont-img d-none">
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              content="./img/diseño_publicitario_contenido.jpg" curso="4" onclick="modals(this)">ver mas
+              <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
+            </a>
+          </li>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
   <div id="cursos" class="container">
     <h2 class="text-center h2">Cursos (nivel capacitación)</h2>
     <p class="text-center fw-bold fs-md-5">¡Celebremos juntos 8 años de constante crecimiento!</p>
     <p class="text-center fs-md-5">Oferta especial por aniversario: Matrícula 0, mensualidad con un 25% de descuento.
     </p>
-    <swiper-container class=" mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+    <swiper-container class=" mySwiper" pagination="true" pagination-dynamic-bullets="true" autoplay-delay="2500"
+      loop="true" effect="coverflow" grab-cursor="true" centered-slides="true" slides-per-view="auto"
+      coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
       coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
       <swiper-slide>
         <img src="./img2/ElementosLanding_4.webp" />
@@ -161,6 +226,17 @@
               <div class="">
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" id="correo" required class="form-control form-control-sm">
+              </div>
+              <div class="mb-3">
+                <label for="carrera">Curso</label>
+                <select class="form-select" multiple aria-label="multiple select example" id="carrera" name="carreas"
+                  required>
+                  <option value="Diseño grafico publicitario" selected>Diseño Grafico Publicitario</option>
+                  <option value="Auxiliar Contable">Auxiliar Contable</option>
+                  <option value="Electronica y Reparacion">Electronica y Reparacion</option>
+                  <option value="Ofimatica">Ofimatica</option>
+                  <option value="Diseño y Programacion de Videojuegos">Diseño y Programacion de Videojuegos</option>
+                </select>
               </div>
               <div class="mb-3">
                 <label for="curso">Curso</label>

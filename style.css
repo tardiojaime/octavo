@@ -51,11 +51,17 @@ header {
   justify-content: center;
   align-items: center;
 }
-#cursos {
+.contenedor_Texto img {
+  width: 100%;
+  height: 100%;
+}
+.text_subir {
+  margin-top: -30px;
 }
 .texto1 {
   font-family: "hregular";
   color: var(--color1);
+  text-align: center;
 }
 .cursos_home {
   margin-top: 5px;
@@ -693,7 +699,13 @@ ul {
   .home .row .contenedor_Texto {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .contenedor_Texto img {
+    width: 100%;
+    height: 100%;
   }
   .cursos_home {
     display: none;
@@ -729,7 +741,7 @@ ul {
     font-size: 64px;
   }
   .home .row div {
-    text-align: left;
+    text-align: center;
   }
 }
 
