@@ -279,7 +279,9 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-
+.navbar-brand {
+  margin-right: 0;
+}
 .section {
   display: flex;
 }
@@ -733,6 +735,10 @@ ul {
     width: 45%;
     height: 50%;
   }
+  .container-a a {
+    padding: 0;
+    font-size: 80%;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -749,6 +755,11 @@ ul {
 @media (min-width: 768px) {
   .contenedor_form {
     width: 70%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container-a a:nth-child(2) {
+    display: none;
   }
 }
 

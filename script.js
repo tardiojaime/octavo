@@ -3,6 +3,8 @@ var btn_submit = document.getElementById("btn_submit");
 var form = document.getElementById("registration-form");
 var espera = document.getElementById("espera");
 var listo = document.getElementById("listo");
+var carrera = document.getElementById("Carrera");
+var carrera_c = document.getElementById("carrera_c");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();

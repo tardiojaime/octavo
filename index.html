@@ -24,6 +24,7 @@
             class="d-inline-block align-text-top">
         </a>
         <div class="container-a">
+          <a href="#carreras">Carreras</a>
           <a href="#cursos">Cursos</a>
           <a href="#registrarme">Registrate</a>
         </div>
@@ -60,9 +61,12 @@
       </svg></div>
   </div>
   <div id="carreras" class="container">
-    <h2 class="text-center h2">Cursos (nivel capacitación)</h2>
-    <p class="text-center fw-bold fs-md-5">¡Celebremos juntos 8 años de constante crecimiento!</p>
-    <p class="text-center fs-md-5">Oferta especial por aniversario: Matrícula 0, mensualidad con un 25% de descuento.
+    <h2 class="text-center h2">Carreras (nivel técnico superior)</h2>
+    <p class="text-center fw-bold fs-4">¡Celebra con nosotros 8 años de excelencia educativa!</p>
+    <p class="text-center fs-5">
+      En nuestro aniversario, te ofrecemos una oferta única: ¡Matrícula gratuita y un descuento del 25% en todas
+      nuestras carreras!.
+      <span class="">¡</span>No pierdas esta oportunidad para comenzar tu camino hacia el éxito académico!
     </p>
     <swiper-container class=" mySwiper" pagination="true" pagination-dynamic-bullets="true" autoplay-delay="2500"
       loop="true" effect="coverflow" grab-cursor="true" centered-slides="true" slides-per-view="auto"
@@ -133,9 +137,10 @@
       coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
       <swiper-slide>
         <img src="./img2/ElementosLanding_4.webp" />
-        <div class="cont-img d-none">
+        <div class="cont-img">
           <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              content="./img/auxiliar_contable_conte.jpg" curso="0" onclick="modals(this)">ver mas
+              content="./img/cursos/Detalle_curso_SUPER_PROMO_OCTUBRE_Auxiliar contable tributario.webp" curso="0"
+              onclick="modals(this)">ver mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
             </a>
           </li>
@@ -143,10 +148,11 @@
       </swiper-slide>
       <swiper-slide>
         <img src="./img2/ElementosLanding_1.webp" />
-        <div class="cont-img d-none">
+        <div class="cont-img">
           <li>
             <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              content="./img/deseño_de_videojuegos_contenido.jpg" curso="1" onclick="modals(this)">ver
+              content="./img/cursos/Detalle curso SUPER PROMO OCTUBRE_Desarrollo de videojuegos con unity.webp"
+              curso="1" onclick="modals(this)">ver
               mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
             </a>
@@ -155,9 +161,10 @@
       </swiper-slide>
       <swiper-slide>
         <img src="./img2/ElementosLanding_3.webp" />
-        <div class="cont-img d-none">
+        <div class="cont-img">
           <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              content="./img/electronica_y_reparacion_con.jpg" curso="3" onclick="modals(this)">ver mas
+              content="./img/cursos/Detalle curso SUPER PROMO OCTUBRE_Electrónica y reparación de computadoras y celulares.webp"
+              curso="3" onclick="modals(this)">ver mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
             </a>
           </li>
@@ -165,9 +172,10 @@
       </swiper-slide>
       <swiper-slide>
         <img src="./img2/ElementosLanding_2.webp" />
-        <div class="cont-img d-none">
+        <div class="cont-img">
           <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              content="./img/ofimatica-contenido.jpeg" curso="2" onclick="modals(this)">ver mas
+              content="./img/cursos/Detalle curso SUPER PROMO OCTUBRE_Ofimática.webp" curso="2"
+              onclick="modals(this)">ver mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
             </a>
           </li>
@@ -175,9 +183,10 @@
       </swiper-slide>
       <swiper-slide>
         <img src="./img2/ElementosLanding_5.webp" />
-        <div class="cont-img d-none">
+        <div class="cont-img">
           <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              content="./img/diseño_publicitario_contenido.jpg" curso="4" onclick="modals(this)">ver mas
+              content="./img/cursos/Detalle curso SUPER PROMO OCTUBRE_Diseño gráfico Publicitario.webp" curso="4"
+              onclick="modals(this)">ver mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
             </a>
           </li>
@@ -227,11 +236,10 @@
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" id="correo" required class="form-control form-control-sm">
               </div>
-              <div class="mb-3">
-                <label for="carrera">Curso</label>
-                <select class="form-select" multiple aria-label="multiple select example" id="carrera" name="carreas"
-                  required>
-                  <option value="Diseño grafico publicitario" selected>Diseño Grafico Publicitario</option>
+              <div class="mb-3" id="carrera_c">
+                <label for="Carrera">Carrera</label>
+                <select class="form-control form-control-sm" id="Carrera" name="Carrera" required>
+                  <option value="Diseño grafico publicitario">Diseño Grafico Publicitario</option>
                   <option value="Auxiliar Contable">Auxiliar Contable</option>
                   <option value="Electronica y Reparacion">Electronica y Reparacion</option>
                   <option value="Ofimatica">Ofimatica</option>
