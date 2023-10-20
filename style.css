@@ -740,7 +740,7 @@ ul {
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+/*@media (min-width: 576px) {
   .home .row div h1 {
     text-align: left;
     font-size: 64px;
@@ -749,13 +749,13 @@ ul {
     text-align: center;
   }
 }
-
+*/
 /*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .contenedor_form {
     width: 70%;
   }
-}
+}*/
 @media screen and (max-width: 300px) {
   .container-a a:nth-child(2) {
     display: none;
