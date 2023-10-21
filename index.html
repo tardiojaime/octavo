@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Itec 8 Aniversario</title>
   <meta name="theme-color" content="#0050af">
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="shortcut icon" href="./img/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/f7cd2b308a.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,28 +29,7 @@
         </div>
       </div>
     </nav>
-    <div class="container home">
-      <div class="row">
-        <div class="col-md-6 contenedor_Texto">
-          <div class="imges">
-            <img src="./img2/ElementosLanding_PromoAniversario.png" alt="">
-            <div class="text_subir">
-              <h4 class="texto1">8 años de constante crecimiento</h4>
-              <p class="texto1">Admisiones especiales, ¡inscríbete ahora!</p>
-              <a class="cursos_home" href="#cursos">cursos</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 home_img">
-          <img class="logo8anos" src="./img2/Elementos_Landing_Logo8años.png" alt="">
-          <a class="cursos_home_mobile" href="#cursos">cursos</a>
-          <img class="blanco" src="./img2/ElementosLanding_GloboBlanco.png" alt="">
-          <img class="azul" src="./img2/ElementosLanding_GloboAzul.png" alt="">
-          <img class="_b" src="./img2/ElementosLanding_GloboBlanco.png" alt="">
-          <img class="_a" src="./img2/ElementosLanding_GloboAzul.png" alt="">
-        </div>
-      </div>
-    </div>
+
   </header>
   <div class="ola">
     <div style="height: 80px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -131,13 +109,13 @@
     <p class="text-center fw-bold fs-md-5">¡Celebremos juntos 8 años de constante crecimiento!</p>
     <p class="text-center fs-md-5">Oferta especial por aniversario: Matrícula 0, mensualidad con un 25% de descuento.
     </p>
-    <swiper-container class=" mySwiper" pagination="true" loop="true" effect="coverflow" grab-cursor="true"
-      centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
-      coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-container class=" mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
       <swiper-slide>
-        <img src="./img2/ElementosLanding_4.webp" />
+        <img src="./img/cursos/ElementosLanding_4.webp" />
         <div class="cont-img">
-          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#modalcursos"
               content="./img/cursos/Detalle_curso_SUPER_PROMO_OCTUBRE_Auxiliar contable tributario.webp" curso="0"
               onclick="modals(this)">ver mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
@@ -146,10 +124,10 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="./img2/ElementosLanding_1.webp" />
+        <img src="./img/cursos/ElementosLanding_1.webp" />
         <div class="cont-img">
           <li>
-            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modalcursos"
               content="./img/cursos/Detalle curso SUPER PROMO OCTUBRE_Desarrollo de videojuegos con unity.webp"
               curso="1" onclick="modals(this)">ver
               mas
@@ -159,9 +137,9 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="./img2/ElementosLanding_3.webp" />
+        <img src="./img/cursos/ElementosLanding_3.webp" />
         <div class="cont-img">
-          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#modalcursos"
               content="./img/cursos/Detalle curso SUPER PROMO OCTUBRE_Electrónica y reparación de computadoras y celulares.webp"
               curso="3" onclick="modals(this)">ver mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
@@ -170,9 +148,9 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="./img2/ElementosLanding_2.webp" />
+        <img src="./img/cursos/ElementosLanding_2.webp" />
         <div class="cont-img">
-          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#modalcursos"
               content="./img/cursos/Detalle curso SUPER PROMO OCTUBRE_Ofimática.webp" curso="2"
               onclick="modals(this)">ver mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
@@ -181,9 +159,9 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="./img2/ElementosLanding_5.webp" />
+        <img src="./img/cursos/ElementosLanding_5.webp" />
         <div class="cont-img">
-          <li><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          <li><a type="button" data-bs-toggle="modal" data-bs-target="#modalcursos"
               content="./img/cursos/Detalle curso SUPER PROMO OCTUBRE_Diseño gráfico Publicitario.webp" curso="4"
               onclick="modals(this)">ver mas
               <i class="fas fa-search-plus fa-rotate-90 fa-xs"></i>
@@ -194,12 +172,12 @@
     </swiper-container>
   </div>
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="modalcursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content text-center modal_contenedor position-relative">
         <a id="btn-wha" class="btn btn-wha position-absolute" sms="base" onclick="porcurso(this)" role="button"
           style="bottom: 5px; right: 5px;">+ info <i class="fab fa-whatsapp" style="color: #24b241;"></i></a>
-        <img id="modal_img" src="img2/ElementosLanding_1.webp" alt="">
+        <img id="modal_img" src="" alt="">
       </div>
     </div>
   </div>
@@ -212,10 +190,10 @@
       ¡Solicita tu cupo!
     </h3>
     <div class="row mb-4">
-      <div class="col-md-6 col-sm-6 formulario">
+      <div class="col-md-6 formulario">
         <div class="contenedor_form">
           <div class="logo_container">
-            <img src="img/logo_2_r.png" alt="">
+            <img src="./img/header/logo_2_r.png" alt="">
           </div>
           <div class="card-body">
             <form class="row g-1" id="registration-form" method="post">
@@ -235,7 +213,7 @@
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" id="correo" required class="form-control form-control-sm">
               </div>
-              <div class="mb-3" id="carrera_c">
+              <!--               <div class="mb-3" id="carrera_c">
                 <label for="Carrera">Carrera</label>
                 <select class="form-control form-control-sm" id="Carrera" name="Carrera" required>
                   <option value="Diseño grafico publicitario">Diseño Grafico Publicitario</option>
@@ -244,7 +222,7 @@
                   <option value="Ofimatica">Ofimatica</option>
                   <option value="Diseño y Programacion de Videojuegos">Diseño y Programacion de Videojuegos</option>
                 </select>
-              </div>
+              </div> -->
               <div class="mb-3">
                 <label for="curso">Curso</label>
                 <select class="form-control form-control-sm" id="curso" name="curso" required>

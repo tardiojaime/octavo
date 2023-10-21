@@ -28,11 +28,6 @@ form.addEventListener("submit", function (event) {
     })
     .catch((error) => console.log(" Error: " + error.message));
 });
-function guardar() {
-  espera.classList.add("d-none");
-  listo.classList.remove("d-none");
-  btn_submit.textContent = "Enviado";
-}
 function ruta(sms) {
   let numero = 59172871823;
   const ruta = `https://api.whatsapp.com/send?phone=+${numero}&text=${sms}`;
@@ -52,7 +47,7 @@ var cursos = [
 ];
 
 var modal_img = document.getElementById("modal_img");
-var modal = document.getElementById("exampleModal");
+var modal = document.getElementById("modalcursos");
 var btn_wha = document.getElementById("btn-wha");
 function modals(e) {
   let img = e.getAttribute("content");
