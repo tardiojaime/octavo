@@ -695,7 +695,32 @@ footer div div h3 {
     width: 45%;
     height: 50%;
   }
+<<<<<<< HEAD
 }
+=======
+  .container-a a {
+    padding: 0;
+    font-size: 80%;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {
+  .home .row div h1 {
+    text-align: left;
+    font-size: 64px;
+  }
+  .home .row div {
+    text-align: center;
+  }
+}
+*/
+/*// Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) {
+  .contenedor_form {
+    width: 70%;
+  }
+}*/
+>>>>>>> e61e132c479fa9ce155b294f0d21f0a8e02e1494
 @media screen and (max-width: 300px) {
   .container-a a:nth-child(2) {
     display: none;
