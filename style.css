@@ -149,7 +149,6 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
 }
 .cursos_home_mobile {
   margin-top: 15px;
-  display: none;
   padding: 5px 25px;
   display: inline-block;
   display: inline-block;
@@ -164,7 +163,9 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   background: var(--amarillo);
   box-shadow: 0 0 10px rgba(26, 47, 139, 0.51);
 }
-
+.cursos_home_mobile {
+  display: none;
+}
 @keyframes izquierda {
   0% {
     opacity: 0;
@@ -241,7 +242,8 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
     opacity: 1;
   }
   100% {
-    transform: translateX(200px) translateY(-100px);
+    z-index: 99;
+    transform: translateX(20px) translateY(-100px);
     width: 100px;
     height: 120px;
     opacity: 0;
@@ -688,39 +690,14 @@ footer div div h3 {
     display: none;
   }
   .cursos_home_mobile {
-    display: none;
+    display: block;
   }
   .home_img .logo8anos {
     margin-top: -40px;
     width: 45%;
     height: 50%;
   }
-<<<<<<< HEAD
 }
-=======
-  .container-a a {
-    padding: 0;
-    font-size: 80%;
-  }
-}
-/*Small devices (landscape phones, 576px and up)*/
-/*@media (min-width: 576px) {
-  .home .row div h1 {
-    text-align: left;
-    font-size: 64px;
-  }
-  .home .row div {
-    text-align: center;
-  }
-}
-*/
-/*// Medium devices (tablets, 768px and up)*/
-/*@media (min-width: 768px) {
-  .contenedor_form {
-    width: 70%;
-  }
-}*/
->>>>>>> e61e132c479fa9ce155b294f0d21f0a8e02e1494
 @media screen and (max-width: 300px) {
   .container-a a:nth-child(2) {
     display: none;
