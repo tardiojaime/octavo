@@ -336,12 +336,13 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
 swiper-container {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 swiper-slide {
-  width: 320px;
-  height: 480px;
+  min-width: 320px;
+  /*   min-height: 480px; */
+  max-width: 450px;
   position: relative;
   background-position: center;
   background-size: cover;
@@ -611,8 +612,8 @@ footer div div h3 {
     margin-top: 12px;
   }
   .home_img .logo8anos {
-    width: 40%;
-    height: 60%;
+    width: 100%;
+    /* height: 60%; */
   }
   .home .row .contenedor_Texto {
     display: flex;
@@ -626,11 +627,34 @@ footer div div h3 {
     background-position: center;
     background-size: cover;
     width: 275px;
-    height: 405px;
   }
   swiper-slide img {
     height: 380px;
     object-fit: cover;
+  }
+  #carreras img.contaduria {
+    content: url("./img2/carreras/contaduria_general_1.png");
+  }
+  #carreras img.sistemas {
+    content: url("./img2/carreras/sistemas_informaticos_1.png");
+  }
+  #carreras img.secretariado {
+    content: url("./img2/carreras/secretariado_administrativo_1.png");
+  }
+  #carreras img.diseno {
+    content: url("./img2/carreras/diseno_grafico_1.png");
+  }
+  #cursos img.juegos {
+    content: url("./img2/cursos/desarrollo_de_video_juegos_1.png");
+  }
+  #cursos img.deseno {
+    content: url("./img2/cursos/diseno_publicitario_1.png");
+  }
+  #cursos img.operador {
+    content: url("./img2/cursos/ofimatica_operador_de_paquetes_1.png");
+  }
+  #cursos img.reparacion {
+    content: url("./img2/cursos/repacion_de_computadores_y_celulares_1.png");
   }
   .h22 {
     font-size: 1.7rem;
