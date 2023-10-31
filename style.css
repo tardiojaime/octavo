@@ -505,7 +505,7 @@ a:not([href]):not([class]):hover {
 }
 
 .logo_container > img {
-  height: 80px;
+  height: 100px;
   object-fit: cover;
 }
 
