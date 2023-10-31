@@ -29,7 +29,6 @@ body {
 }
 
 header {
-  height: 100vh;
   /* background: url("./img2/Elemento_Landing_Fondo1.jpg"); */
   background: rgb(0, 80, 175);
   background: linear-gradient(
@@ -63,6 +62,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+
 .container-a a {
   padding: 0 8px;
   color: white;
@@ -79,6 +79,49 @@ ul {
   margin: 0;
   padding: 0;
 }
+/*
+estilos de contenedor chat
+*/
+.chat {
+  position: sticky;
+  top: 85vh;
+  z-index: 999;
+  /* right: 0; */
+  float: right;
+  padding: 20px;
+}
+.chat > .whatsap > a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+}
+.chat > .whatsap > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  /*   border: 2px solid rgb(18, 235, 18); */
+  box-shadow: 0 0 10px rgba(18, 235, 18, 0.5);
+  animation: resaltar 1s infinite;
+}
+@keyframes resaltar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    width: 38px;
+    height: 37px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /*fin de nav-inicio de contenido secion 1*/
 .home {
   position: relative;
@@ -96,6 +139,7 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
 }
 .home .row div {
   text-align: center;
+  margin: auto 0;
 }
 .home .row div h1 {
   animation: izquierda 0.5s ease-in;
@@ -113,16 +157,14 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   animation: izquierda 0.5s ease-in;
 }
 .contenedor_Texto > div img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
 }
-.text_subir {
-  margin-top: -100px;
-}
+
 .texto1 {
   font-family: "hregular";
   color: var(--color1);
   text-align: center;
+  z-index: 999;
 }
 .cursos_home {
   margin-top: 5px;
@@ -196,8 +238,7 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   }
 }
 .home_img .logo8anos {
-  width: 50%;
-  height: 80%;
+  width: 95%;
   z-index: 9;
 }
 .blanco {
@@ -232,6 +273,37 @@ background: linear-gradient(to right, #CFCFCF 0%, #CACF3E 100%);
   bottom: 32%;
   animation: azul1 10s infinite;
 }
+.cer {
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  z-index: 1;
+}
+.cer1 {
+  width: 30px;
+  /*   animation: agrandar infinite 2s; */
+}
+.cer2 {
+  width: 35px;
+  /*   animation: agrandar infinite 2s; */
+}
+.cer3 {
+  width: 25px;
+  /*   animation: agrandar infinite 2s; */
+}
+.cer4 {
+  animation: agrandar infinite 4s;
+}
+@keyframes agrandar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+    opacity: 0;
+  }
+}
+
 @keyframes azul {
   0% {
     width: 0px;
@@ -341,7 +413,6 @@ swiper-container {
 
 swiper-slide {
   min-width: 320px;
-  /*   min-height: 480px; */
   max-width: 450px;
   position: relative;
   background-position: center;
@@ -630,7 +701,9 @@ footer div div h3 {
   }
   swiper-slide img {
     height: 380px;
-    object-fit: cover;
+    object-fit: fill;
+  }
+  .home {
   }
   #carreras img.contaduria {
     content: url("./img2/carreras/contaduria_general_1.png");
@@ -647,7 +720,7 @@ footer div div h3 {
   #cursos img.juegos {
     content: url("./img2/cursos/desarrollo_de_video_juegos_1.png");
   }
-  #cursos img.deseno {
+  #cursos img.diseno {
     content: url("./img2/cursos/diseno_publicitario_1.png");
   }
   #cursos img.operador {
@@ -680,7 +753,7 @@ footer div div h3 {
 }
 @media (max-width: 576px) {
   header {
-    height: 100vh;
+    /*  height: 100vh; */
   }
   .container-a a {
     padding: 0;
@@ -705,8 +778,7 @@ footer div div h3 {
     overflow: hidden;
   }
   .contenedor_Texto div img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
   }
   .home_img {
     background: none;
@@ -718,9 +790,7 @@ footer div div h3 {
     display: block;
   }
   .home_img .logo8anos {
-    margin-top: -40px;
-    width: 45%;
-    height: 50%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 300px) {
