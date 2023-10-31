@@ -126,10 +126,12 @@
   </div>
   <div id="cursos" class="container">
     <h2 class="text-center h2">Cursos (nivel capacitación)</h2>
-    <p class="text-center fw-bold fs-md-5">¡Celebremos juntos 8 años de constante crecimiento!</p>
-    <p class="text-center fs-md-5">Oferta especial por aniversario: Matrícula 0, mensualidad con un 25% de descuento.
+    <p class="text-center fw-bold fs-4">¡Festejemos juntos 49 años de constante evolución!</p>
+    <p class="text-center fs-6">
+      En honor a nuestro aniversario, te ofrecemos una oferta especial: Matrícula cero y un 25% de descuento en la
+      mensualidad."
     </p>
-    <swiper-container class=" mySwiper" pagination="true" pagination-dynamic-bullets="true" autoplay-delay="2500"
+    <swiper-container class=" mySwiper" pagination="true" pagination-dynamic-bullets="true" loop="true"
       effect="coverflow" grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
       coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
       coverflow-effect-slide-shadows="true">
@@ -179,26 +181,28 @@
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" id="correo" required class="form-control form-control-sm">
               </div>
-              <!--               <div class="mb-3" id="carrera_c">
-                <label for="Carrera">Carrera</label>
-                <select class="form-control form-control-sm" id="Carrera" name="Carrera" required>
-                  <option value="Diseño grafico publicitario">Diseño Grafico Publicitario</option>
-                  <option value="Auxiliar Contable">Auxiliar Contable</option>
-                  <option value="Electronica y Reparacion">Electronica y Reparacion</option>
-                  <option value="Ofimatica">Ofimatica</option>
-                  <option value="Diseño y Programacion de Videojuegos">Diseño y Programacion de Videojuegos</option>
-                </select>
-              </div> -->
               <div class="mb-3">
-                <label for="curso">Curso</label>
-                <select class="form-control form-control-sm" id="curso" name="curso" required>
-                  <option value="Diseño grafico publicitario">Diseño Grafico Publicitario</option>
-                  <option value="Auxiliar Contable">Auxiliar Contable</option>
-                  <option value="Electronica y Reparacion">Electronica y Reparacion</option>
-                  <option value="Ofimatica">Ofimatica</option>
-                  <option value="Diseño y Programacion de Videojuegos">Diseño y Programacion de Videojuegos</option>
+                <label for="Carrera">Carrera</label>
+                <select id="select_carrera" class="form-control form-control-sm" name="carrera" required>
+                  <option value=".">Seleccione...</option>
+                  <option value="Contaduría General">Contaduría General</option>
+                  <option value="Sistemas Informáticos">Sistemas Informáticos</option>
+                  <option value="Secretariado Administrativo"">Secretariado Administrativo" </option>
+                  <option value="Diseño gráfico multimedia">Diseño gráfico multimedia</option>
                 </select>
               </div>
+              <div class="mb-3">
+                <label for="curso">Curso</label>
+                <select id="selec_curso" class="form-control form-control-sm" id="curso" name="curso" required>
+                  <option value=".">Seleccione...</option>
+                  <option value="Desarrollo de videojuegos">Desarrollo de videojuegos</option>
+                  <option value="Diseño publicitario">Diseño publicitario</option>
+                  <option value="Ofimática y computación">Ofimática y computación</option>
+                  <option value="Electrónica y reparación de computadoras y celulares">Electrónica y reparación de
+                    computadoras y celulares</option>
+                </select>
+              </div>
+              <input type="hidden" name="fecha" id="hora">
               <div class="text-center">
                 <button id="btn_submit" type="submit" class="sign-in_btn">Enviar
                 </button>
@@ -228,13 +232,12 @@
           <ul class="ul-footer">
             <li>
               <a
-                href="https://www.google.com/maps/place/INSTITUTO+TECNICO+%22ITEC%22/@-19.0446132,-65.2599856,17z/data=!3m1!4b1!4m6!3m5!1s0x93fbcf3467cb1ad7:0x6ef4b7b199ed8ce4!8m2!3d-19.0446183!4d-65.2574107!16s%2Fg%2F11hc_3lxvp?entry=ttu"><i
-                  class="fas fa-map-marker-alt " style="color: #21b63f;"></i> Aniceto Arce #289, Ciudad
-                Sucre,
-                Bolivia</a>
+                href="https://www.google.com/maps/dir/?api=1&destination=-21.530724%2C-64.73359&fbclid=IwAR2dueNanWwq3ViLAXjzMxo8ChoYr-SH_vlQPI2VZnxncWHksYus7-NIk3I"><i
+                  class="fas fa-map-marker-alt " style="color: #21b63f;"></i>
+                Calle General Trigo entre Corrado y Av. Domingo Paz #942, Tarija, Bolivia.
             </li>
             <li>
-              <a href="https://www.itec.com.bo/"><i class="fas fa-globe" style="color: #2585df;"></i>
+              <a href="https://www.itec.com.bo/ingdata"><i class="fas fa-globe" style="color: #2585df;"></i>
                 www.itec.com.bo/ingdata</a>
             </li>
             <li><a id="wa-me" href="#"><i class="fab fa-whatsapp" style="color: #24b241;"></i> +591 72871823</a>
@@ -244,15 +247,13 @@
         <div class="col-sm-6 col-md-6">
           <h3 class="">Encuentranos en:</h3>
           <ul class="ul-footer">
-            <li><a href="https://www.facebook.com/ItecSucre/?locale=es_LA"><i class="fab fa-facebook"
+            <li><a href="https://www.facebook.com/IngDataTarija/photos?locale=es_LA"><i class="fab fa-facebook"
                   style="color: #164492;"></i> Facebook</a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@itec_en_bolivia"><i class="fab fa-tiktok" style="color: #000000;"></i>
-                Tiktok</a></li>
-            </li>
+            <li><a href="https://www.instagram.com/instituto_ingdata_tarija/"><i class="fab fa-instagram"></i>
+                Instagram</a></li>
           </ul>
         </div>
-        <p class="text-center text-muted">© 2023 Itec - Instituto Tecnico</p>
+        <p class="text-center text-muted">© 2023 Ing Data - Instituto de Educación Superior.</p>
       </div>
     </div>
   </footer>
